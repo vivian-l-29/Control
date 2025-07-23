@@ -1,15 +1,15 @@
 .header {
-  display: flex;
-  justify-content: space-between; /* separa los elementos a los extremos */
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between; 
   align-items: center;
   background-color: rgb(73, 174, 214);
   padding: 10px 30px;
   font-family: 'Segoe UI', sans-serif;
 }
 
-.site-title {
-  margin: 0;
-  font-size: 2.5rem;
+.titulo {
+  font-size: 2rem;
   color: #000000;
 }
 

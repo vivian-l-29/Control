@@ -5,9 +5,9 @@ function header() {
     header.className = 'header';
 
     // Crea el título del sitio, que irá al lado izquierdo
-    let title = document.createElement('h1');
-    title.className = 'site-title';
-    title.innerText = 'Byviusk';
+    let titulo = document.createElement('h1');
+    titulo.className = 'titulo';
+    titulo.innerText = 'ByVivian';
 
     // Crea el logo que irá en la esquina derecha
     let logo = document.createElement('img');
@@ -16,10 +16,10 @@ function header() {
     logo.alt = 'Logo';
 
     // Agrega primero el título (izquierda) y luego el logo (derecha)
-    header.appendChild(title);
+    header.appendChild(titulo);
     header.appendChild(logo);
 
     return header;
 }
 
-export { header };
+export { header }
