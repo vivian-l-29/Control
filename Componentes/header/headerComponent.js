@@ -1,21 +1,21 @@
 // Función que crea dinámicamente un encabezado <header> con un logo y un título
 function header() {
     // Crea el elemento <header> y le asigna una clase para estilos
-    const header = document.createElement('header');
+    let header = document.createElement('header');
     header.className = 'header';
 
     // Crea un contenedor interno para el logo y el título (alineados juntos)
-    const leftSection = document.createElement('div');
+    let leftSection = document.createElement('div');
     leftSection.className = 'left-section';
 
     // Crea una imagen que servirá como logo
-    const img = document.createElement('img');
+    let img = document.createElement('img');
     img.className = 'logo-img'; // Clase para estilos del logo
     img.src = 'https://styles.redditmedia.com/t5_6i3dhn/styles/communityIcon_ot5j3jxoci491.png'; // Ruta de la imagen del logo
     img.alt = 'Logo'; // Texto alternativo por accesibilidad
 
     // Crea el título del sitio
-    const title = document.createElement('h1');
+    let title = document.createElement('h1');
     title.className = 'site-title'; // Clase para estilos del título
     title.textContent = 'Byviusk'; // Texto que se mostrará como título
 

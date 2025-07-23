@@ -3,8 +3,7 @@ import { header } from "./Componentes/header/headerComponent.js";
 
 // Función que crea una sección con un encabezado, un título y un párrafo
 function seccion() {
-
-    // Crea un elemento HTML llamado <section> (se recomienda usar 'section' en vez de 'seccion')
+    // Crea un elemento HTML llamado <section>
     let seccion = document.createElement('section');
 
     // Inserta el encabezado (header) dentro de la sección
@@ -21,12 +20,12 @@ function seccion() {
     p.innerText = "Introducción a JavaScript";
     seccion.appendChild(p);
 
-    // Mensaje en la consola (solo para ver que la función se ejecutó)
+    // Mensaje en la consola (solo para verificar que la función se ejecutó)
     console.log("Hola Mundo");
 
-    // Devuelve la sección completa para insertarla en el HTML
+    // Retorna la sección completa para insertarla en el documento
     return seccion;
 }
 
-// Agrega la sección creada al final del <body> del documento
+// Agrega la sección creada al <body> del documento
 document.body.appendChild(seccion());
