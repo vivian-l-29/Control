@@ -15,7 +15,7 @@ export function item() {
     
     let descripcion = document.createElement('descripcion');
     descripcion.className = "descrip";
-    descripcion.innerText = "The Weeknd es el nombre artístico de Abel Makkonen Tesfaye, un cantante, compositor y productor musical canadiense nacido el 16 de febrero de 1990 en Toronto, Canadá."
+    descripcion.innerText = "The Weeknd es el nombre artístico de Abel Makkonen Tesfaye, es un cantante, compositor y productor musical canadiense nacido el 16 de febrero de 1990 en Toronto, Canadá."
     item.appendChild(descripcion);
 
     
