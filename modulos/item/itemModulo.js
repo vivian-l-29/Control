@@ -1,25 +1,27 @@
-export function item() {
-    
+export function item(titulo, urlImg, desc) {
     let item = document.createElement('div');
-    item.className = "item"
+    item.className = "item";
 
-    let tit = document.createElement('text')
-    tit.className = "tit"
-    tit.innerText = "The Weekdnd"
+    let tit = document.createElement('p');
+    tit.className = "tit";
+    tit.innerText = titulo;
     item.appendChild(tit);
 
     let img = document.createElement('img');
     img.className = "item-img";
-    img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq6MQd71YqnJIL4EQrTUjScMehB6nKlCOffg&s"
+    img.src = urlImg;
     item.appendChild(img);
-    
-    let descripcion = document.createElement('descripcion');
+
+    let descripcion = document.createElement('p');
     descripcion.className = "descrip";
-    descripcion.innerText = "The Weeknd es el nombre artístico de Abel Makkonen Tesfaye, es un cantante, compositor y productor musical canadiense nacido el 16 de febrero de 1990 en Toronto, Canadá."
+    descripcion.innerText = desc;
     item.appendChild(descripcion);
 
-    
-
+    item.addEventListener('click', () => {
+        item.classList.add("verde");
+        let rHeader = document.querySelector('.header');
+        rHeader.classList.add("ocultar");
+    });
 
     return item;
 }

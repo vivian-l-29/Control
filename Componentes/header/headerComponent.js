@@ -1,6 +1,5 @@
 // Función que crea el encabezado con el título a la izquierda y logo a la derecha
 function header() {
-    // Crea el elemento <header> y le asigna una clase para aplicar estilos
     let header = document.createElement('header');
     header.className = 'header';
 
