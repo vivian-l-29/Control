@@ -4,7 +4,7 @@ function header() {
 
     let titulo = document.createElement('h1');
     titulo.className = 'titulo';
-    titulo.innerText = 'ByVivian';
+    titulo.innerText = 'ByViusk';
 
     let logo = document.createElement('img');
     logo.className = 'logo-img';
