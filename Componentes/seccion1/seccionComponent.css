@@ -5,4 +5,15 @@
     gap: 2rem;
 
     justify-self: center;
+    padding-bottom: 6rem;
 }
+
+  @media (max-width: 768px) {
+    .seccion-1 {
+      grid-template-columns: 2, 1fr;    
+      gap: 1rem;                  
+      
+      padding: 0 10px;            
+    }
+  }
+  

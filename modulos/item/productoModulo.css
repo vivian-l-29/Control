@@ -1,0 +1,64 @@
+.item {
+  width: 40rem;      
+  height: 30rem;
+  background-color: rgb(231, 191, 255);
+  border-radius: 7px;
+  margin: 1rem auto;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 20px 1fr 1fr;
+  gap: 2px;
+}
+
+.tit {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.item-img {
+  margin: auto;
+  width: 8rem;
+  height: 8rem;
+  margin-top: 6rem;
+}
+
+.descrip {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.price {
+  font-size: 10px;
+  border-radius: 7px;
+  background-color: rgb(210, 247, 247);
+  color: rgb(0, 0, 0);
+}
+.verde {
+  background-color: rgb(233, 215, 241);
+}
+
+/* 📱 SOLO en móviles */
+@media (max-width: 600px) {
+  .item {
+    width: 10%;        
+    max-width: 12rem;  
+    height: auto;      
+    padding: 0.5rem;
+    grid-template-rows: auto auto auto;
+  }
+
+  .tit {
+    font-size: 12px;
+  }
+
+  .item-img {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
+  }
+
+  .descrip {
+    font-size: 9px;
+  }
+}
